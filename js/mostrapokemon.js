@@ -23,7 +23,7 @@ function mostraPokemon(url) {
       const pokemon = {
         nome: resp.name,
         image: resp.sprites.back_default,
-        tipo: resp.types.map(t => t.type.name),
+        tipo: resp.types.map(t => t.type.name), // returando array de tipo
         peso: resp.weight,
         altura: resp.height,
         id: resp.id        
